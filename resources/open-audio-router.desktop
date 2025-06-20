@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Open Audio Router
+Comment=iOS-inspired audio device manager and router
+Exec=OpenAudioRouter
+Icon=open-audio-router
+Terminal=false
+Type=Application
+Categories=AudioVideo;Audio;Mixer;
+Keywords=audio;sound;device;routing;pulseaudio;mixer;
+StartupWMClass=OpenAudioRouter

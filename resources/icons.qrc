@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>app-icon.svg</file>
+        <file>microphone.svg</file>
+        <file>speaker.svg</file>
+        <file>headphones.svg</file>
+        <file>bluetooth.svg</file>
+    </qresource>
+</RCC>
