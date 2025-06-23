@@ -9,7 +9,6 @@ class PulseAudioBackend;
 class DeviceController : public QObject
 {
     Q_OBJECT
-    QML_ELEMENT
 
 public:
     explicit DeviceController(QObject *parent = nullptr);

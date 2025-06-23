@@ -1,0 +1,191 @@
+{
+    "classes": [
+        {
+            "className": "AudioDevice",
+            "enums": [
+                {
+                    "isClass": false,
+                    "isFlag": false,
+                    "name": "DeviceType",
+                    "values": [
+                        "Input",
+                        "Output"
+                    ]
+                }
+            ],
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "name": "name",
+                    "notify": "nameChanged",
+                    "read": "name",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false,
+                    "write": "setName"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 1,
+                    "name": "description",
+                    "notify": "descriptionChanged",
+                    "read": "description",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false,
+                    "write": "setDescription"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 2,
+                    "name": "type",
+                    "notify": "typeChanged",
+                    "read": "type",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "DeviceType",
+                    "user": false,
+                    "write": "setType"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 3,
+                    "name": "isDefault",
+                    "notify": "isDefaultChanged",
+                    "read": "isDefault",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false,
+                    "write": "setIsDefault"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 4,
+                    "name": "volume",
+                    "notify": "volumeChanged",
+                    "read": "volume",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "double",
+                    "user": false,
+                    "write": "setVolume"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 5,
+                    "name": "isMuted",
+                    "notify": "isMutedChanged",
+                    "read": "isMuted",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false,
+                    "write": "setIsMuted"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 6,
+                    "name": "iconName",
+                    "notify": "iconNameChanged",
+                    "read": "iconName",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 7,
+                    "name": "index",
+                    "notify": "indexChanged",
+                    "read": "index",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "uint32_t",
+                    "user": false,
+                    "write": "setIndex"
+                }
+            ],
+            "qualifiedClassName": "AudioDevice",
+            "signals": [
+                {
+                    "access": "public",
+                    "name": "nameChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "descriptionChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "typeChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "isDefaultChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "volumeChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "isMutedChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "iconNameChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "indexChanged",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "AudioDevice.h",
+    "outputRevision": 68
+}

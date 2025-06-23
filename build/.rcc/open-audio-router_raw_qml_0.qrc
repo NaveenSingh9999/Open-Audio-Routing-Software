@@ -1,0 +1,17 @@
+<RCC>
+  <qresource prefix="/OpenAudioRouter/">
+    <file alias="qml/main.qml">/workspaces/Open-Audio-Routing-Software/qml/main.qml</file>
+    <file alias="qml/components/DeviceCard.qml">/workspaces/Open-Audio-Routing-Software/qml/components/DeviceCard.qml</file>
+    <file alias="qml/components/VolumeSlider.qml">/workspaces/Open-Audio-Routing-Software/qml/components/VolumeSlider.qml</file>
+    <file alias="qml/components/AudioMeter.qml">/workspaces/Open-Audio-Routing-Software/qml/components/AudioMeter.qml</file>
+    <file alias="qml/components/AppRoutingItem.qml">/workspaces/Open-Audio-Routing-Software/qml/components/AppRoutingItem.qml</file>
+    <file alias="qml/components/ProfileCard.qml">/workspaces/Open-Audio-Routing-Software/qml/components/ProfileCard.qml</file>
+    <file alias="qml/components/TabButton.qml">/workspaces/Open-Audio-Routing-Software/qml/components/TabButton.qml</file>
+    <file alias="qml/views/DevicesView.qml">/workspaces/Open-Audio-Routing-Software/qml/views/DevicesView.qml</file>
+    <file alias="qml/views/RoutingView.qml">/workspaces/Open-Audio-Routing-Software/qml/views/RoutingView.qml</file>
+    <file alias="qml/views/ProfilesView.qml">/workspaces/Open-Audio-Routing-Software/qml/views/ProfilesView.qml</file>
+    <file alias="resources/icons.qrc">/workspaces/Open-Audio-Routing-Software/resources/icons.qrc</file>
+    <file alias="resources/styles.qrc">/workspaces/Open-Audio-Routing-Software/resources/styles.qrc</file>
+  </qresource>
+</RCC>
+

@@ -1,0 +1,14 @@
+-rootPath
+/workspaces/Open-Audio-Routing-Software
+-cmake-output
+-output-file
+/workspaces/Open-Audio-Routing-Software/build/.qt_plugins/Qt6_QmlPlugins_Imports_open-audio-router.cmake
+-importPath
+/workspaces/Open-Audio-Routing-Software/build/OpenAudioRouter
+-importPath
+/workspaces/Open-Audio-Routing-Software/build
+-importPath
+/usr/lib/x86_64-linux-gnu/qt6/qml
+-qrcFiles
+/workspaces/Open-Audio-Routing-Software/build/.rcc/qmake_OpenAudioRouter.qrc
+/workspaces/Open-Audio-Routing-Software/build/.rcc/open-audio-router_raw_qml_0.qrc

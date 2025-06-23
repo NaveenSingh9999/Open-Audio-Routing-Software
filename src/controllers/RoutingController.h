@@ -10,7 +10,6 @@ class PulseAudioBackend;
 class RoutingController : public QObject
 {
     Q_OBJECT
-    QML_ELEMENT
 
 public:
     explicit RoutingController(QObject *parent = nullptr);

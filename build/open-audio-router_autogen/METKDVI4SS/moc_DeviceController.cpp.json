@@ -1,0 +1,78 @@
+{
+    "classes": [
+        {
+            "className": "DeviceController",
+            "methods": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "device",
+                            "type": "AudioDevice*"
+                        }
+                    ],
+                    "name": "setDefaultDevice",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "device",
+                            "type": "AudioDevice*"
+                        },
+                        {
+                            "name": "volume",
+                            "type": "double"
+                        }
+                    ],
+                    "name": "setDeviceVolume",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "device",
+                            "type": "AudioDevice*"
+                        },
+                        {
+                            "name": "muted",
+                            "type": "bool"
+                        }
+                    ],
+                    "name": "setDeviceMute",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "refreshDevices",
+                    "returnType": "void"
+                }
+            ],
+            "object": true,
+            "qualifiedClassName": "DeviceController",
+            "signals": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "device",
+                            "type": "AudioDevice*"
+                        }
+                    ],
+                    "name": "deviceSwitched",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "DeviceController.h",
+    "outputRevision": 68
+}

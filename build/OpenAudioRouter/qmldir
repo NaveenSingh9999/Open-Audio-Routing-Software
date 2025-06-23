@@ -1,0 +1,13 @@
+module OpenAudioRouter
+typeinfo open-audio-router.qmltypes
+prefer :/OpenAudioRouter/
+DeviceCard 1.0 qml/components/DeviceCard.qml
+VolumeSlider 1.0 qml/components/VolumeSlider.qml
+AudioMeter 1.0 qml/components/AudioMeter.qml
+AppRoutingItem 1.0 qml/components/AppRoutingItem.qml
+ProfileCard 1.0 qml/components/ProfileCard.qml
+TabButton 1.0 qml/components/TabButton.qml
+DevicesView 1.0 qml/views/DevicesView.qml
+RoutingView 1.0 qml/views/RoutingView.qml
+ProfilesView 1.0 qml/views/ProfilesView.qml
+

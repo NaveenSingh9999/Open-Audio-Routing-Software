@@ -1,0 +1,10 @@
+/OpenAudioRouter/qml/main.qml
+/OpenAudioRouter/qml/components/DeviceCard.qml
+/OpenAudioRouter/qml/components/VolumeSlider.qml
+/OpenAudioRouter/qml/components/AudioMeter.qml
+/OpenAudioRouter/qml/components/AppRoutingItem.qml
+/OpenAudioRouter/qml/components/ProfileCard.qml
+/OpenAudioRouter/qml/components/TabButton.qml
+/OpenAudioRouter/qml/views/DevicesView.qml
+/OpenAudioRouter/qml/views/RoutingView.qml
+/OpenAudioRouter/qml/views/ProfilesView.qml

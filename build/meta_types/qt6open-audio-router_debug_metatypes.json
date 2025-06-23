@@ -1,0 +1,1499 @@
+[
+    {
+        "classes": [
+            {
+                "className": "ApplicationListModel",
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "app",
+                                "type": "AudioApplication*"
+                            }
+                        ],
+                        "name": "addApplication",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "clientId",
+                                "type": "uint32_t"
+                            }
+                        ],
+                        "name": "removeApplication",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "app",
+                                "type": "AudioApplication*"
+                            }
+                        ],
+                        "name": "updateApplication",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "index",
+                                "type": "int"
+                            }
+                        ],
+                        "name": "getApplication",
+                        "returnType": "AudioApplication*"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "clientId",
+                                "type": "uint32_t"
+                            }
+                        ],
+                        "name": "getApplicationByClientId",
+                        "returnType": "AudioApplication*"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "deviceIndex",
+                                "type": "uint32_t"
+                            }
+                        ],
+                        "name": "getApplicationsForDevice",
+                        "returnType": "QList<AudioApplication*>"
+                    },
+                    {
+                        "access": "public",
+                        "name": "getPlayingApplications",
+                        "returnType": "QList<AudioApplication*>"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "count",
+                        "notify": "countChanged",
+                        "read": "rowCount",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "ApplicationListModel",
+                "signals": [
+                    {
+                        "access": "public",
+                        "name": "countChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QAbstractListModel"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "ApplicationListModel.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "DeviceListModel",
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "device",
+                                "type": "AudioDevice*"
+                            }
+                        ],
+                        "name": "addDevice",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "deviceIndex",
+                                "type": "uint32_t"
+                            }
+                        ],
+                        "name": "removeDevice",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "device",
+                                "type": "AudioDevice*"
+                            }
+                        ],
+                        "name": "updateDevice",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "index",
+                                "type": "int"
+                            }
+                        ],
+                        "name": "getDevice",
+                        "returnType": "AudioDevice*"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "deviceIndex",
+                                "type": "uint32_t"
+                            }
+                        ],
+                        "name": "getDeviceByIndex",
+                        "returnType": "AudioDevice*"
+                    },
+                    {
+                        "access": "public",
+                        "name": "getInputDevices",
+                        "returnType": "QList<AudioDevice*>"
+                    },
+                    {
+                        "access": "public",
+                        "name": "getOutputDevices",
+                        "returnType": "QList<AudioDevice*>"
+                    },
+                    {
+                        "access": "public",
+                        "name": "getDefaultInputDevice",
+                        "returnType": "AudioDevice*"
+                    },
+                    {
+                        "access": "public",
+                        "name": "getDefaultOutputDevice",
+                        "returnType": "AudioDevice*"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "count",
+                        "notify": "countChanged",
+                        "read": "rowCount",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "DeviceListModel",
+                "signals": [
+                    {
+                        "access": "public",
+                        "name": "countChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QAbstractListModel"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "DeviceListModel.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "DeviceController",
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "device",
+                                "type": "AudioDevice*"
+                            }
+                        ],
+                        "name": "setDefaultDevice",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "device",
+                                "type": "AudioDevice*"
+                            },
+                            {
+                                "name": "volume",
+                                "type": "double"
+                            }
+                        ],
+                        "name": "setDeviceVolume",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "device",
+                                "type": "AudioDevice*"
+                            },
+                            {
+                                "name": "muted",
+                                "type": "bool"
+                            }
+                        ],
+                        "name": "setDeviceMute",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "refreshDevices",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "qualifiedClassName": "DeviceController",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "device",
+                                "type": "AudioDevice*"
+                            }
+                        ],
+                        "name": "deviceSwitched",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "DeviceController.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "MainController",
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "isInitialized",
+                        "notify": "initializedChanged",
+                        "read": "isInitialized",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "statusMessage",
+                        "notify": "statusMessageChanged",
+                        "read": "statusMessage",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "MainController",
+                "signals": [
+                    {
+                        "access": "public",
+                        "name": "initializedChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "statusMessageChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "device",
+                                "type": "AudioDevice*"
+                            }
+                        ],
+                        "name": "onDeviceAdded",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "deviceIndex",
+                                "type": "uint32_t"
+                            }
+                        ],
+                        "name": "onDeviceRemoved",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "device",
+                                "type": "AudioDevice*"
+                            }
+                        ],
+                        "name": "onDeviceUpdated",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "app",
+                                "type": "AudioApplication*"
+                            }
+                        ],
+                        "name": "onApplicationAdded",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "clientId",
+                                "type": "uint32_t"
+                            }
+                        ],
+                        "name": "onApplicationRemoved",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "app",
+                                "type": "AudioApplication*"
+                            }
+                        ],
+                        "name": "onApplicationUpdated",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "name": "onConnectionChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "MainController.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "ProfileController",
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "name",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "saveProfile",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "name",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "loadProfile",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "name",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "deleteProfile",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "oldName",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "newName",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "renameProfile",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "name",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "getProfileData",
+                        "returnType": "QJsonObject"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "profileNames",
+                        "notify": "profileNamesChanged",
+                        "read": "profileNames",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QStringList",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "currentProfile",
+                        "notify": "currentProfileChanged",
+                        "read": "currentProfile",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "ProfileController",
+                "signals": [
+                    {
+                        "access": "public",
+                        "name": "profileNamesChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "currentProfileChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "name",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "profileSaved",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "name",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "profileLoaded",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "name",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "profileDeleted",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "private",
+                        "name": "loadProfiles",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "name": "saveProfiles",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "ProfileController.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "RoutingController",
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "app",
+                                "type": "AudioApplication*"
+                            },
+                            {
+                                "name": "device",
+                                "type": "AudioDevice*"
+                            }
+                        ],
+                        "name": "routeApplicationToDevice",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "app",
+                                "type": "AudioApplication*"
+                            },
+                            {
+                                "name": "volume",
+                                "type": "double"
+                            }
+                        ],
+                        "name": "setApplicationVolume",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "app",
+                                "type": "AudioApplication*"
+                            },
+                            {
+                                "name": "muted",
+                                "type": "bool"
+                            }
+                        ],
+                        "name": "setApplicationMute",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "refreshApplications",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "qualifiedClassName": "RoutingController",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "app",
+                                "type": "AudioApplication*"
+                            },
+                            {
+                                "name": "device",
+                                "type": "AudioDevice*"
+                            }
+                        ],
+                        "name": "applicationRouted",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "RoutingController.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "AudioManager",
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "isConnected",
+                        "notify": "connectionChanged",
+                        "read": "isConnected",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "AudioManager",
+                "signals": [
+                    {
+                        "access": "public",
+                        "name": "connectionChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "device",
+                                "type": "AudioDevice*"
+                            }
+                        ],
+                        "name": "deviceAdded",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "deviceIndex",
+                                "type": "uint32_t"
+                            }
+                        ],
+                        "name": "deviceRemoved",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "device",
+                                "type": "AudioDevice*"
+                            }
+                        ],
+                        "name": "deviceUpdated",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "app",
+                                "type": "AudioApplication*"
+                            }
+                        ],
+                        "name": "applicationAdded",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "clientId",
+                                "type": "uint32_t"
+                            }
+                        ],
+                        "name": "applicationRemoved",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "app",
+                                "type": "AudioApplication*"
+                            }
+                        ],
+                        "name": "applicationUpdated",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "connected",
+                                "type": "bool"
+                            }
+                        ],
+                        "name": "onConnectionStatusChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "AudioManager.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "PulseAudioBackend",
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "deviceIndex",
+                                "type": "uint32_t"
+                            }
+                        ],
+                        "name": "setDefaultSink",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "deviceIndex",
+                                "type": "uint32_t"
+                            }
+                        ],
+                        "name": "setDefaultSource",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "deviceIndex",
+                                "type": "uint32_t"
+                            },
+                            {
+                                "name": "isSource",
+                                "type": "bool"
+                            },
+                            {
+                                "name": "volume",
+                                "type": "double"
+                            }
+                        ],
+                        "name": "setDeviceVolume",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "deviceIndex",
+                                "type": "uint32_t"
+                            },
+                            {
+                                "name": "isSource",
+                                "type": "bool"
+                            },
+                            {
+                                "name": "muted",
+                                "type": "bool"
+                            }
+                        ],
+                        "name": "setDeviceMute",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "clientId",
+                                "type": "uint32_t"
+                            },
+                            {
+                                "name": "deviceIndex",
+                                "type": "uint32_t"
+                            },
+                            {
+                                "name": "isSource",
+                                "type": "bool"
+                            }
+                        ],
+                        "name": "moveApplicationToDevice",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "clientId",
+                                "type": "uint32_t"
+                            },
+                            {
+                                "name": "volume",
+                                "type": "double"
+                            }
+                        ],
+                        "name": "setApplicationVolume",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "clientId",
+                                "type": "uint32_t"
+                            },
+                            {
+                                "name": "muted",
+                                "type": "bool"
+                            }
+                        ],
+                        "name": "setApplicationMute",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "qualifiedClassName": "PulseAudioBackend",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "device",
+                                "type": "AudioDevice*"
+                            }
+                        ],
+                        "name": "deviceAdded",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "deviceIndex",
+                                "type": "uint32_t"
+                            }
+                        ],
+                        "name": "deviceRemoved",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "device",
+                                "type": "AudioDevice*"
+                            }
+                        ],
+                        "name": "deviceUpdated",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "app",
+                                "type": "AudioApplication*"
+                            }
+                        ],
+                        "name": "applicationAdded",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "clientId",
+                                "type": "uint32_t"
+                            }
+                        ],
+                        "name": "applicationRemoved",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "app",
+                                "type": "AudioApplication*"
+                            }
+                        ],
+                        "name": "applicationUpdated",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "connected",
+                                "type": "bool"
+                            }
+                        ],
+                        "name": "connectionStatusChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "private",
+                        "name": "onTimerTimeout",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "PulseAudioBackend.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "AudioApplication",
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "name",
+                        "notify": "nameChanged",
+                        "read": "name",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setName"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "processName",
+                        "notify": "processNameChanged",
+                        "read": "processName",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setProcessName"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "name": "clientId",
+                        "notify": "clientIdChanged",
+                        "read": "clientId",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "uint32_t",
+                        "user": false,
+                        "write": "setClientId"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "name": "volume",
+                        "notify": "volumeChanged",
+                        "read": "volume",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "double",
+                        "user": false,
+                        "write": "setVolume"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 4,
+                        "name": "isMuted",
+                        "notify": "isMutedChanged",
+                        "read": "isMuted",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setIsMuted"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 5,
+                        "name": "iconName",
+                        "notify": "iconNameChanged",
+                        "read": "iconName",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 6,
+                        "name": "deviceIndex",
+                        "notify": "deviceIndexChanged",
+                        "read": "deviceIndex",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "uint32_t",
+                        "user": false,
+                        "write": "setDeviceIndex"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 7,
+                        "name": "isPlaying",
+                        "notify": "isPlayingChanged",
+                        "read": "isPlaying",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setIsPlaying"
+                    }
+                ],
+                "qualifiedClassName": "AudioApplication",
+                "signals": [
+                    {
+                        "access": "public",
+                        "name": "nameChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "processNameChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "clientIdChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "volumeChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "isMutedChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "iconNameChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "deviceIndexChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "isPlayingChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "AudioApplication.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "AudioDevice",
+                "enums": [
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "DeviceType",
+                        "values": [
+                            "Input",
+                            "Output"
+                        ]
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "name",
+                        "notify": "nameChanged",
+                        "read": "name",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setName"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "description",
+                        "notify": "descriptionChanged",
+                        "read": "description",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setDescription"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "name": "type",
+                        "notify": "typeChanged",
+                        "read": "type",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "DeviceType",
+                        "user": false,
+                        "write": "setType"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "name": "isDefault",
+                        "notify": "isDefaultChanged",
+                        "read": "isDefault",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setIsDefault"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 4,
+                        "name": "volume",
+                        "notify": "volumeChanged",
+                        "read": "volume",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "double",
+                        "user": false,
+                        "write": "setVolume"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 5,
+                        "name": "isMuted",
+                        "notify": "isMutedChanged",
+                        "read": "isMuted",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setIsMuted"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 6,
+                        "name": "iconName",
+                        "notify": "iconNameChanged",
+                        "read": "iconName",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 7,
+                        "name": "index",
+                        "notify": "indexChanged",
+                        "read": "index",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "uint32_t",
+                        "user": false,
+                        "write": "setIndex"
+                    }
+                ],
+                "qualifiedClassName": "AudioDevice",
+                "signals": [
+                    {
+                        "access": "public",
+                        "name": "nameChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "descriptionChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "typeChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "isDefaultChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "volumeChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "isMutedChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "iconNameChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "indexChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "AudioDevice.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "SystemTray",
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "title",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "message",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "showMessage",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "updateQuickDeviceMenu",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "isVisible",
+                        "notify": "visibilityChanged",
+                        "read": "isVisible",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setVisible"
+                    }
+                ],
+                "qualifiedClassName": "SystemTray",
+                "signals": [
+                    {
+                        "access": "public",
+                        "name": "visibilityChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "showMainWindow",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "deviceName",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "deviceSwitchRequested",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "reason",
+                                "type": "QSystemTrayIcon::ActivationReason"
+                            }
+                        ],
+                        "name": "onTrayIconActivated",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "name": "onShowMainWindow",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "name": "onQuitApplication",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "SystemTray.h",
+        "outputRevision": 68
+    }
+]

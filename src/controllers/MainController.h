@@ -9,7 +9,6 @@
 class MainController : public QObject
 {
     Q_OBJECT
-    QML_ELEMENT
     Q_PROPERTY(bool isInitialized READ isInitialized NOTIFY initializedChanged)
     Q_PROPERTY(QString statusMessage READ statusMessage NOTIFY statusMessageChanged)
 

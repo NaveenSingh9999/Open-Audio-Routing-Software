@@ -1,0 +1,11 @@
+/workspaces/Open-Audio-Routing-Software/build/open-audio-router_autogen/include/../M4YTXQ7V2H/moc_ApplicationListModel.cpp.json
+/workspaces/Open-Audio-Routing-Software/build/open-audio-router_autogen/include/../M4YTXQ7V2H/moc_DeviceListModel.cpp.json
+/workspaces/Open-Audio-Routing-Software/build/open-audio-router_autogen/include/../METKDVI4SS/moc_DeviceController.cpp.json
+/workspaces/Open-Audio-Routing-Software/build/open-audio-router_autogen/include/../METKDVI4SS/moc_MainController.cpp.json
+/workspaces/Open-Audio-Routing-Software/build/open-audio-router_autogen/include/../METKDVI4SS/moc_ProfileController.cpp.json
+/workspaces/Open-Audio-Routing-Software/build/open-audio-router_autogen/include/../METKDVI4SS/moc_RoutingController.cpp.json
+/workspaces/Open-Audio-Routing-Software/build/open-audio-router_autogen/include/../MYYQ2Y7GGF/moc_AudioManager.cpp.json
+/workspaces/Open-Audio-Routing-Software/build/open-audio-router_autogen/include/../MYYQ2Y7GGF/moc_PulseAudioBackend.cpp.json
+/workspaces/Open-Audio-Routing-Software/build/open-audio-router_autogen/include/../VSCBVMNR7M/moc_AudioApplication.cpp.json
+/workspaces/Open-Audio-Routing-Software/build/open-audio-router_autogen/include/../VSCBVMNR7M/moc_AudioDevice.cpp.json
+/workspaces/Open-Audio-Routing-Software/build/open-audio-router_autogen/include/../VSCBVMNR7M/moc_SystemTray.cpp.json

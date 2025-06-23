@@ -1,0 +1,180 @@
+{
+    "classes": [
+        {
+            "className": "AudioApplication",
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "name": "name",
+                    "notify": "nameChanged",
+                    "read": "name",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false,
+                    "write": "setName"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 1,
+                    "name": "processName",
+                    "notify": "processNameChanged",
+                    "read": "processName",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false,
+                    "write": "setProcessName"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 2,
+                    "name": "clientId",
+                    "notify": "clientIdChanged",
+                    "read": "clientId",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "uint32_t",
+                    "user": false,
+                    "write": "setClientId"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 3,
+                    "name": "volume",
+                    "notify": "volumeChanged",
+                    "read": "volume",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "double",
+                    "user": false,
+                    "write": "setVolume"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 4,
+                    "name": "isMuted",
+                    "notify": "isMutedChanged",
+                    "read": "isMuted",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false,
+                    "write": "setIsMuted"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 5,
+                    "name": "iconName",
+                    "notify": "iconNameChanged",
+                    "read": "iconName",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 6,
+                    "name": "deviceIndex",
+                    "notify": "deviceIndexChanged",
+                    "read": "deviceIndex",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "uint32_t",
+                    "user": false,
+                    "write": "setDeviceIndex"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 7,
+                    "name": "isPlaying",
+                    "notify": "isPlayingChanged",
+                    "read": "isPlaying",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false,
+                    "write": "setIsPlaying"
+                }
+            ],
+            "qualifiedClassName": "AudioApplication",
+            "signals": [
+                {
+                    "access": "public",
+                    "name": "nameChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "processNameChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "clientIdChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "volumeChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "isMutedChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "iconNameChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "deviceIndexChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "isPlayingChanged",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "AudioApplication.h",
+    "outputRevision": 68
+}

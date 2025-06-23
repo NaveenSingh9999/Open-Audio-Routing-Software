@@ -1,0 +1,86 @@
+{
+    "classes": [
+        {
+            "className": "RoutingController",
+            "methods": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "app",
+                            "type": "AudioApplication*"
+                        },
+                        {
+                            "name": "device",
+                            "type": "AudioDevice*"
+                        }
+                    ],
+                    "name": "routeApplicationToDevice",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "app",
+                            "type": "AudioApplication*"
+                        },
+                        {
+                            "name": "volume",
+                            "type": "double"
+                        }
+                    ],
+                    "name": "setApplicationVolume",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "app",
+                            "type": "AudioApplication*"
+                        },
+                        {
+                            "name": "muted",
+                            "type": "bool"
+                        }
+                    ],
+                    "name": "setApplicationMute",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "refreshApplications",
+                    "returnType": "void"
+                }
+            ],
+            "object": true,
+            "qualifiedClassName": "RoutingController",
+            "signals": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "app",
+                            "type": "AudioApplication*"
+                        },
+                        {
+                            "name": "device",
+                            "type": "AudioDevice*"
+                        }
+                    ],
+                    "name": "applicationRouted",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "RoutingController.h",
+    "outputRevision": 68
+}

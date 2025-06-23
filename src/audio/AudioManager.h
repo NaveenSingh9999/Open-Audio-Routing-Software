@@ -7,7 +7,6 @@
 class AudioManager : public QObject
 {
     Q_OBJECT
-    QML_ELEMENT
     Q_PROPERTY(bool isConnected READ isConnected NOTIFY connectionChanged)
 
 public:

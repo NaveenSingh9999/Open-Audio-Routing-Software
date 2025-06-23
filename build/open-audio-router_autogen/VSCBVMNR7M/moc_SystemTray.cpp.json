@@ -1,0 +1,102 @@
+{
+    "classes": [
+        {
+            "className": "SystemTray",
+            "methods": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "title",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "message",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "showMessage",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "updateQuickDeviceMenu",
+                    "returnType": "void"
+                }
+            ],
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "name": "isVisible",
+                    "notify": "visibilityChanged",
+                    "read": "isVisible",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false,
+                    "write": "setVisible"
+                }
+            ],
+            "qualifiedClassName": "SystemTray",
+            "signals": [
+                {
+                    "access": "public",
+                    "name": "visibilityChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "showMainWindow",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "deviceName",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "deviceSwitchRequested",
+                    "returnType": "void"
+                }
+            ],
+            "slots": [
+                {
+                    "access": "private",
+                    "arguments": [
+                        {
+                            "name": "reason",
+                            "type": "QSystemTrayIcon::ActivationReason"
+                        }
+                    ],
+                    "name": "onTrayIconActivated",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "name": "onShowMainWindow",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "name": "onQuitApplication",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "SystemTray.h",
+    "outputRevision": 68
+}

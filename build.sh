@@ -22,10 +22,10 @@ echo "🔨 Building application..."
 make -j$(nproc)
 
 echo "✅ Build complete!"
-echo "📁 Executable: ./build/OpenAudioRouter"
+echo "📁 Executable: ./build/open-audio-router"
 echo ""
 echo "To run the application:"
-echo "  cd build && ./OpenAudioRouter"
+echo "  cd build && ./open-audio-router"
 echo ""
 echo "To install system-wide:"
 echo "  sudo make install"

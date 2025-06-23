@@ -1,0 +1,214 @@
+{
+    "classes": [
+        {
+            "className": "PulseAudioBackend",
+            "methods": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "deviceIndex",
+                            "type": "uint32_t"
+                        }
+                    ],
+                    "name": "setDefaultSink",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "deviceIndex",
+                            "type": "uint32_t"
+                        }
+                    ],
+                    "name": "setDefaultSource",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "deviceIndex",
+                            "type": "uint32_t"
+                        },
+                        {
+                            "name": "isSource",
+                            "type": "bool"
+                        },
+                        {
+                            "name": "volume",
+                            "type": "double"
+                        }
+                    ],
+                    "name": "setDeviceVolume",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "deviceIndex",
+                            "type": "uint32_t"
+                        },
+                        {
+                            "name": "isSource",
+                            "type": "bool"
+                        },
+                        {
+                            "name": "muted",
+                            "type": "bool"
+                        }
+                    ],
+                    "name": "setDeviceMute",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "clientId",
+                            "type": "uint32_t"
+                        },
+                        {
+                            "name": "deviceIndex",
+                            "type": "uint32_t"
+                        },
+                        {
+                            "name": "isSource",
+                            "type": "bool"
+                        }
+                    ],
+                    "name": "moveApplicationToDevice",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "clientId",
+                            "type": "uint32_t"
+                        },
+                        {
+                            "name": "volume",
+                            "type": "double"
+                        }
+                    ],
+                    "name": "setApplicationVolume",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "clientId",
+                            "type": "uint32_t"
+                        },
+                        {
+                            "name": "muted",
+                            "type": "bool"
+                        }
+                    ],
+                    "name": "setApplicationMute",
+                    "returnType": "void"
+                }
+            ],
+            "object": true,
+            "qualifiedClassName": "PulseAudioBackend",
+            "signals": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "device",
+                            "type": "AudioDevice*"
+                        }
+                    ],
+                    "name": "deviceAdded",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "deviceIndex",
+                            "type": "uint32_t"
+                        }
+                    ],
+                    "name": "deviceRemoved",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "device",
+                            "type": "AudioDevice*"
+                        }
+                    ],
+                    "name": "deviceUpdated",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "app",
+                            "type": "AudioApplication*"
+                        }
+                    ],
+                    "name": "applicationAdded",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "clientId",
+                            "type": "uint32_t"
+                        }
+                    ],
+                    "name": "applicationRemoved",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "app",
+                            "type": "AudioApplication*"
+                        }
+                    ],
+                    "name": "applicationUpdated",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "connected",
+                            "type": "bool"
+                        }
+                    ],
+                    "name": "connectionStatusChanged",
+                    "returnType": "void"
+                }
+            ],
+            "slots": [
+                {
+                    "access": "private",
+                    "name": "onTimerTimeout",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "PulseAudioBackend.h",
+    "outputRevision": 68
+}

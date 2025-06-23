@@ -9,7 +9,6 @@
 class SystemTray : public QObject
 {
     Q_OBJECT
-    QML_ELEMENT
     Q_PROPERTY(bool isVisible READ isVisible WRITE setVisible NOTIFY visibilityChanged)
 
 public:

@@ -1,0 +1,113 @@
+{
+    "classes": [
+        {
+            "className": "ApplicationListModel",
+            "methods": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "app",
+                            "type": "AudioApplication*"
+                        }
+                    ],
+                    "name": "addApplication",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "clientId",
+                            "type": "uint32_t"
+                        }
+                    ],
+                    "name": "removeApplication",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "app",
+                            "type": "AudioApplication*"
+                        }
+                    ],
+                    "name": "updateApplication",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "index",
+                            "type": "int"
+                        }
+                    ],
+                    "name": "getApplication",
+                    "returnType": "AudioApplication*"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "clientId",
+                            "type": "uint32_t"
+                        }
+                    ],
+                    "name": "getApplicationByClientId",
+                    "returnType": "AudioApplication*"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "deviceIndex",
+                            "type": "uint32_t"
+                        }
+                    ],
+                    "name": "getApplicationsForDevice",
+                    "returnType": "QList<AudioApplication*>"
+                },
+                {
+                    "access": "public",
+                    "name": "getPlayingApplications",
+                    "returnType": "QList<AudioApplication*>"
+                }
+            ],
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "name": "count",
+                    "notify": "countChanged",
+                    "read": "rowCount",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false
+                }
+            ],
+            "qualifiedClassName": "ApplicationListModel",
+            "signals": [
+                {
+                    "access": "public",
+                    "name": "countChanged",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QAbstractListModel"
+                }
+            ]
+        }
+    ],
+    "inputFile": "ApplicationListModel.h",
+    "outputRevision": 68
+}

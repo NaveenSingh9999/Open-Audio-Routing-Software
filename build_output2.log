@@ -1,0 +1,47 @@
+🎵 Building Open Audio Router...
+⚙️ Configuring build...
+-- Could NOT find XKB (missing: XKB_LIBRARY XKB_INCLUDE_DIR) (Required is at least version "0.5.0")
+-- Configuring done (0.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: /workspaces/Open-Audio-Routing-Software/build
+🔨 Building application...
+[  1%] Built target OpenAudioRouter_qmlimportscan
+[ 22%] Built target OpenAudioRouter_tooling
+[ 24%] Built target OpenAudioRouter_autogen_timestamp_deps
+[ 25%] Automatic MOC and UIC for target OpenAudioRouter
+[ 25%] Built target OpenAudioRouter_autogen
+[ 27%] Running AUTOMOC file extraction for target OpenAudioRouter
+[ 27%] Built target OpenAudioRouter_automoc_json_extraction
+[ 29%] Running moc --collect-json for target OpenAudioRouter
+[ 31%] Automatic QML type registration for target OpenAudioRouter
+[ 32%] Generating .rcc/qmlcache/OpenAudioRouter_qml/components/AppRoutingItem_qml.cpp
+[ 34%] Generating .rcc/qmlcache/OpenAudioRouter_qml/components/AudioMeter_qml.cpp
+[ 36%] Generating .rcc/qmlcache/OpenAudioRouter_qml/components/DeviceCard_qml.cpp
+[ 37%] Generating .rcc/qmlcache/OpenAudioRouter_qml/components/ProfileCard_qml.cpp
+[ 41%] Generating .rcc/qmlcache/OpenAudioRouter_qml/components/TabButton_qml.cpp
+[ 41%] Generating .rcc/qmlcache/OpenAudioRouter_qml/components/VolumeSlider_qml.cpp
+[ 43%] Generating .rcc/qmlcache/OpenAudioRouter_qml/main_qml.cpp
+[ 44%] Generating .rcc/qmlcache/OpenAudioRouter_qml/views/DevicesView_qml.cpp
+[ 46%] Generating .rcc/qmlcache/OpenAudioRouter_qml/views/ProfilesView_qml.cpp
+[ 48%] Generating .rcc/qmlcache/OpenAudioRouter_qml/views/RoutingView_qml.cpp
+[ 50%] Building CXX object CMakeFiles/OpenAudioRouter.dir/src/main.cpp.o
+[ 51%] Building CXX object CMakeFiles/OpenAudioRouter.dir/OpenAudioRouter_autogen/mocs_compilation.cpp.o
+[ 53%] Building CXX object CMakeFiles/OpenAudioRouter.dir/src/audio/AudioManager.cpp.o
+[ 55%] Building CXX object CMakeFiles/OpenAudioRouter.dir/src/audio/PulseAudioBackend.cpp.o
+[ 56%] Building CXX object CMakeFiles/OpenAudioRouter.dir/src/models/ApplicationListModel.cpp.o
+[ 58%] Building CXX object CMakeFiles/OpenAudioRouter.dir/src/controllers/MainController.cpp.o
+[ 60%] Building CXX object CMakeFiles/OpenAudioRouter.dir/src/controllers/DeviceController.cpp.o
+[ 62%] Building CXX object CMakeFiles/OpenAudioRouter.dir/src/controllers/RoutingController.cpp.o
+[ 63%] Building CXX object CMakeFiles/OpenAudioRouter.dir/src/controllers/ProfileController.cpp.o
+[ 65%] Building CXX object CMakeFiles/OpenAudioRouter.dir/src/utils/AudioDevice.cpp.o
+[ 67%] Building CXX object CMakeFiles/OpenAudioRouter.dir/src/utils/AudioApplication.cpp.o
+[ 68%] Building CXX object CMakeFiles/OpenAudioRouter.dir/src/utils/SystemTray.cpp.o
+[ 70%] Building CXX object CMakeFiles/OpenAudioRouter.dir/openaudiorouter_qmltyperegistrations.cpp.o
+/workspaces/Open-Audio-Routing-Software/build/openaudiorouter_qmltyperegistrations.cpp:10:10: fatal error: ApplicationListModel.h: No such file or directory
+   10 | #include <ApplicationListModel.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [CMakeFiles/OpenAudioRouter.dir/build.make:413: CMakeFiles/OpenAudioRouter.dir/openaudiorouter_qmltyperegistrations.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/Makefile2:100: CMakeFiles/OpenAudioRouter.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2

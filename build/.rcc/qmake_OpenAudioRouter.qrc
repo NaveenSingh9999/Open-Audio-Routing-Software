@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/OpenAudioRouter">
+    <file alias="qmldir">/workspaces/Open-Audio-Routing-Software/build/OpenAudioRouter/qmldir</file>
+  </qresource>
+</RCC>
+

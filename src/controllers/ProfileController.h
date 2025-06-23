@@ -8,7 +8,6 @@
 class ProfileController : public QObject
 {
     Q_OBJECT
-    QML_ELEMENT
     Q_PROPERTY(QStringList profileNames READ profileNames NOTIFY profileNamesChanged)
     Q_PROPERTY(QString currentProfile READ currentProfile NOTIFY currentProfileChanged)
 

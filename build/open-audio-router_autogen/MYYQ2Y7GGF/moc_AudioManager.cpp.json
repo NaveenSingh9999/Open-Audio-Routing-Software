@@ -1,0 +1,119 @@
+{
+    "classes": [
+        {
+            "className": "AudioManager",
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "name": "isConnected",
+                    "notify": "connectionChanged",
+                    "read": "isConnected",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false
+                }
+            ],
+            "qualifiedClassName": "AudioManager",
+            "signals": [
+                {
+                    "access": "public",
+                    "name": "connectionChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "device",
+                            "type": "AudioDevice*"
+                        }
+                    ],
+                    "name": "deviceAdded",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "deviceIndex",
+                            "type": "uint32_t"
+                        }
+                    ],
+                    "name": "deviceRemoved",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "device",
+                            "type": "AudioDevice*"
+                        }
+                    ],
+                    "name": "deviceUpdated",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "app",
+                            "type": "AudioApplication*"
+                        }
+                    ],
+                    "name": "applicationAdded",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "clientId",
+                            "type": "uint32_t"
+                        }
+                    ],
+                    "name": "applicationRemoved",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "app",
+                            "type": "AudioApplication*"
+                        }
+                    ],
+                    "name": "applicationUpdated",
+                    "returnType": "void"
+                }
+            ],
+            "slots": [
+                {
+                    "access": "private",
+                    "arguments": [
+                        {
+                            "name": "connected",
+                            "type": "bool"
+                        }
+                    ],
+                    "name": "onConnectionStatusChanged",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "AudioManager.h",
+    "outputRevision": 68
+}

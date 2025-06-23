@@ -1,0 +1,55 @@
+🎵 Building Open Audio Router...
+⚙️ Configuring build...
+-- Could NOT find XKB (missing: XKB_LIBRARY XKB_INCLUDE_DIR) (Required is at least version "0.5.0")
+-- Configuring done (0.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: /workspaces/Open-Audio-Routing-Software/build
+🔨 Building application...
+[  1%] Built target OpenAudioRouter_qmlimportscan
+[ 22%] Built target OpenAudioRouter_tooling
+[ 24%] Built target OpenAudioRouter_autogen_timestamp_deps
+[ 25%] Automatic MOC and UIC for target OpenAudioRouter
+[ 25%] Built target OpenAudioRouter_autogen
+[ 27%] Running AUTOMOC file extraction for target OpenAudioRouter
+[ 27%] Built target OpenAudioRouter_automoc_json_extraction
+[ 29%] Running moc --collect-json for target OpenAudioRouter
+[ 31%] Automatic QML type registration for target OpenAudioRouter
+[ 34%] Generating .rcc/qmlcache/OpenAudioRouter_qml/components/AudioMeter_qml.cpp
+[ 34%] Generating .rcc/qmlcache/OpenAudioRouter_qml/components/AppRoutingItem_qml.cpp
+[ 36%] Generating .rcc/qmlcache/OpenAudioRouter_qml/components/DeviceCard_qml.cpp
+[ 37%] Generating .rcc/qmlcache/OpenAudioRouter_qml/components/ProfileCard_qml.cpp
+[ 39%] Generating .rcc/qmlcache/OpenAudioRouter_qml/components/TabButton_qml.cpp
+[ 41%] Generating .rcc/qmlcache/OpenAudioRouter_qml/components/VolumeSlider_qml.cpp
+[ 43%] Generating .rcc/qmlcache/OpenAudioRouter_qml/main_qml.cpp
+[ 44%] Generating .rcc/qmlcache/OpenAudioRouter_qml/views/DevicesView_qml.cpp
+[ 46%] Generating .rcc/qmlcache/OpenAudioRouter_qml/views/ProfilesView_qml.cpp
+[ 48%] Generating .rcc/qmlcache/OpenAudioRouter_qml/views/RoutingView_qml.cpp
+[ 50%] Building CXX object CMakeFiles/OpenAudioRouter.dir/OpenAudioRouter_autogen/mocs_compilation.cpp.o
+[ 51%] Building CXX object CMakeFiles/OpenAudioRouter.dir/src/main.cpp.o
+[ 53%] Building CXX object CMakeFiles/OpenAudioRouter.dir/src/audio/AudioManager.cpp.o
+[ 55%] Building CXX object CMakeFiles/OpenAudioRouter.dir/src/audio/PulseAudioBackend.cpp.o
+[ 56%] Building CXX object CMakeFiles/OpenAudioRouter.dir/src/models/DeviceListModel.cpp.o
+In file included from /workspaces/Open-Audio-Routing-Software/src/audio/PulseAudioBackend.cpp:1:
+/workspaces/Open-Audio-Routing-Software/src/audio/PulseAudioBackend.h:77:35: error: field ‘m_devices’ has incomplete type ‘QHash<unsigned int, AudioDevice*>’
+   77 |     QHash<uint32_t, AudioDevice*> m_devices;
+      |                                   ^~~~~~~~~
+In file included from /usr/include/x86_64-linux-gnu/qt6/QtCore/qtypeinfo.h:6,
+                 from /usr/include/x86_64-linux-gnu/qt6/QtCore/qglobal.h:1397,
+                 from /usr/include/x86_64-linux-gnu/qt6/QtCore/qnamespace.h:8,
+                 from /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs.h:12,
+                 from /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h:10,
+                 from /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject:1,
+                 from /workspaces/Open-Audio-Routing-Software/src/audio/PulseAudioBackend.h:3:
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainerfwd.h:15:43: note: declaration of ‘class QHash<unsigned int, AudioDevice*>’
+   15 | template <typename Key, typename T> class QHash;
+      |                                           ^~~~~
+/workspaces/Open-Audio-Routing-Software/src/audio/PulseAudioBackend.h:78:40: error: field ‘m_applications’ has incomplete type ‘QHash<unsigned int, AudioApplication*>’
+   78 |     QHash<uint32_t, AudioApplication*> m_applications;
+      |                                        ^~~~~~~~~~~~~~
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainerfwd.h:15:43: note: declaration of ‘class QHash<unsigned int, AudioApplication*>’
+   15 | template <typename Key, typename T> class QHash;
+      |                                           ^~~~~
+make[2]: *** [CMakeFiles/OpenAudioRouter.dir/build.make:273: CMakeFiles/OpenAudioRouter.dir/src/audio/PulseAudioBackend.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/Makefile2:100: CMakeFiles/OpenAudioRouter.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2

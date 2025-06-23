@@ -10,6 +10,9 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
+# Set executable name
+set(EXECUTABLE_NAME open-audio-router)
+
 # Find required Qt6 components
 find_package(Qt6 REQUIRED COMPONENTS
     Core
@@ -63,16 +66,17 @@ set(QML_FILES
     qml/components/AudioMeter.qml
     qml/components/AppRoutingItem.qml
     qml/components/ProfileCard.qml
+    qml/components/TabButton.qml
     qml/views/DevicesView.qml
     qml/views/RoutingView.qml
     qml/views/ProfilesView.qml
 )
 
 # Create executable
-qt6_add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS})
+qt6_add_executable(${EXECUTABLE_NAME} ${SOURCES} ${HEADERS})
 
 # Add QML module
-qt6_add_qml_module(${PROJECT_NAME}
+qt6_add_qml_module(${EXECUTABLE_NAME}
     URI OpenAudioRouter
     VERSION 1.0
     QML_FILES ${QML_FILES}
@@ -82,7 +86,7 @@ qt6_add_qml_module(${PROJECT_NAME}
 )
 
 # Link libraries
-target_link_libraries(${PROJECT_NAME}
+target_link_libraries(${EXECUTABLE_NAME} PRIVATE
     Qt6::Core
     Qt6::Quick
     Qt6::QuickControls2
@@ -94,18 +98,18 @@ target_link_libraries(${PROJECT_NAME}
 )
 
 # Include directories
-target_include_directories(${PROJECT_NAME} PRIVATE
+target_include_directories(${EXECUTABLE_NAME} PRIVATE
     src
     ${PULSEAUDIO_INCLUDE_DIRS}
 )
 
 # Compiler flags
-target_compile_options(${PROJECT_NAME} PRIVATE
+target_compile_options(${EXECUTABLE_NAME} PRIVATE
     ${PULSEAUDIO_CFLAGS_OTHER}
 )
 
 # Install rules
-install(TARGETS ${PROJECT_NAME}
+install(TARGETS ${EXECUTABLE_NAME}
     RUNTIME DESTINATION bin
 )
 

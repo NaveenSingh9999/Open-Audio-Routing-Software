@@ -1,0 +1,132 @@
+{
+    "classes": [
+        {
+            "className": "MainController",
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "name": "isInitialized",
+                    "notify": "initializedChanged",
+                    "read": "isInitialized",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 1,
+                    "name": "statusMessage",
+                    "notify": "statusMessageChanged",
+                    "read": "statusMessage",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false
+                }
+            ],
+            "qualifiedClassName": "MainController",
+            "signals": [
+                {
+                    "access": "public",
+                    "name": "initializedChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "statusMessageChanged",
+                    "returnType": "void"
+                }
+            ],
+            "slots": [
+                {
+                    "access": "private",
+                    "arguments": [
+                        {
+                            "name": "device",
+                            "type": "AudioDevice*"
+                        }
+                    ],
+                    "name": "onDeviceAdded",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "arguments": [
+                        {
+                            "name": "deviceIndex",
+                            "type": "uint32_t"
+                        }
+                    ],
+                    "name": "onDeviceRemoved",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "arguments": [
+                        {
+                            "name": "device",
+                            "type": "AudioDevice*"
+                        }
+                    ],
+                    "name": "onDeviceUpdated",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "arguments": [
+                        {
+                            "name": "app",
+                            "type": "AudioApplication*"
+                        }
+                    ],
+                    "name": "onApplicationAdded",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "arguments": [
+                        {
+                            "name": "clientId",
+                            "type": "uint32_t"
+                        }
+                    ],
+                    "name": "onApplicationRemoved",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "arguments": [
+                        {
+                            "name": "app",
+                            "type": "AudioApplication*"
+                        }
+                    ],
+                    "name": "onApplicationUpdated",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "name": "onConnectionChanged",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "MainController.h",
+    "outputRevision": 68
+}

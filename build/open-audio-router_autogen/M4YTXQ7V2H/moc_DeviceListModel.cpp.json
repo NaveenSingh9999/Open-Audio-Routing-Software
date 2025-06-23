@@ -1,0 +1,117 @@
+{
+    "classes": [
+        {
+            "className": "DeviceListModel",
+            "methods": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "device",
+                            "type": "AudioDevice*"
+                        }
+                    ],
+                    "name": "addDevice",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "deviceIndex",
+                            "type": "uint32_t"
+                        }
+                    ],
+                    "name": "removeDevice",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "device",
+                            "type": "AudioDevice*"
+                        }
+                    ],
+                    "name": "updateDevice",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "index",
+                            "type": "int"
+                        }
+                    ],
+                    "name": "getDevice",
+                    "returnType": "AudioDevice*"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "deviceIndex",
+                            "type": "uint32_t"
+                        }
+                    ],
+                    "name": "getDeviceByIndex",
+                    "returnType": "AudioDevice*"
+                },
+                {
+                    "access": "public",
+                    "name": "getInputDevices",
+                    "returnType": "QList<AudioDevice*>"
+                },
+                {
+                    "access": "public",
+                    "name": "getOutputDevices",
+                    "returnType": "QList<AudioDevice*>"
+                },
+                {
+                    "access": "public",
+                    "name": "getDefaultInputDevice",
+                    "returnType": "AudioDevice*"
+                },
+                {
+                    "access": "public",
+                    "name": "getDefaultOutputDevice",
+                    "returnType": "AudioDevice*"
+                }
+            ],
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "name": "count",
+                    "notify": "countChanged",
+                    "read": "rowCount",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false
+                }
+            ],
+            "qualifiedClassName": "DeviceListModel",
+            "signals": [
+                {
+                    "access": "public",
+                    "name": "countChanged",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QAbstractListModel"
+                }
+            ]
+        }
+    ],
+    "inputFile": "DeviceListModel.h",
+    "outputRevision": 68
+}

@@ -2,6 +2,7 @@
 
 #include <QObject>
 #include <QTimer>
+#include <QHash>
 #include <pulse/pulseaudio.h>
 #include "utils/AudioDevice.h"
 #include "utils/AudioApplication.h"
